@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <section id="section-a">
+      <div>
+        <button class="again">Again!</button>
+        <p>(Between 1 and 20)</p>
+      </div>
+      <h1>Guess My Number!</h1>
+      <div class="number">?</div>
+      <div class="centerline"></div>
+    </section>
+
+    <section id="section-b">
+      <div class="left">
+        <input class="guess" type="number" name="number" id="number" />
+        <button class="check">Check!</button>
+      </div>
+      <div class="right">
+        <p class="message">Start guessing...</p>
+        <p><i class="fas fa-dice"></i> Score: <span class="score">20</span></p>
+        <p><i class="fas fa-medal"></i> Highscore: <span class="highscore">0</span></p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
